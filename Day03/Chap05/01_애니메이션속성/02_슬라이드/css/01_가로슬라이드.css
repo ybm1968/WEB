@@ -4,22 +4,22 @@
     height: 400px;
     margin: 0 auto;
     border: 10px solid black;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .slide {
     position: absolute;
-    width: calc(800px * 3);     /* 800? */
-    /* height: 400px; */
-    /* animation-name: slide;
+    width: calc(800px * 3);     
+    height: 400px;
+    animation-name: slide;
     animation-duration: 16s;
-    animation-iteration-count: infinite; */
+    animation-iteration-count: infinite;
 }
 
 .slide img {
     width: 800px;
     height: 400px;
-    /* float: left; */
+    float: left;
 }
 
 @keyframes slide {

@@ -66,5 +66,4 @@
 .img-box img:hover { 
     transform: scale(1.2);
     cursor: pointer;
-    /* transition: all 0.5s; */
 }
