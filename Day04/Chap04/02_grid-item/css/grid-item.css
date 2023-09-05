@@ -47,7 +47,7 @@
 
 /* item 속성 : grid-column */
 .grid-column .item1 {
-    /* grid-column: 1 / span 2; */   /* span : 확장할 라인 개수 지정 */
+    grid-column: 1 / span 2;   /* span : 확장할 라인 개수 지정
     /* grid-column: 1 / 3; */   /* 단축속성 : grid-column-start / grid-column-end */
     /* grid-column-start: 1; */ /* 개별속성 */
     /* grid-column-end: 3; */   /* 개별속성 */
