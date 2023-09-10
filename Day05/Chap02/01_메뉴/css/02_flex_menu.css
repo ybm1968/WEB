@@ -1,3 +1,4 @@
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 /* reset */
@@ -19,12 +20,14 @@ header {
     padding: 10px; 
     background-color: #dce6ff; 
 }
+
 .util .util-menu { 
     /* float: right; */ 
     display: flex;
     column-gap: 14px;
     margin: 0 5px;
 }
+
 .util .util-menu li { 
     /* display: inline-block; */
     /* margin: 0 14px; */
@@ -64,7 +67,7 @@ header {
     color: white;
 }
 
-.menu .menu-left a i {}
+
 
 /* menu - center */
 .menu .menu-center {
@@ -73,7 +76,7 @@ header {
     transform: translateX(-50%); */
 }
 
-.menu .menu-center nav {}
+
 .menu .menu-center nav ul {
     display: flex;
     /* flex-wrap: wrap; */
@@ -115,8 +118,7 @@ header {
     .pc { display: none; }
     .mobile { display: inherit; }
 
-    nav.mobile {}
-    nav.mobile ul {}
+    
     nav.mobile ul li {
         height: 60px;
         line-height: 60px;

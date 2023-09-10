@@ -57,8 +57,6 @@ header {
     color: white;
 }
 
-.menu .menu-left a i {}
-
 /* menu - center */
 .menu .menu-center {
     position: absolute;
@@ -66,8 +64,6 @@ header {
     transform: translateX(-50%);
 }
 
-.menu .menu-center nav {}
-.menu .menu-center nav ul {}
 .menu .menu-center nav ul li {
     display: inline-block;
     height: 80px;
@@ -104,8 +100,6 @@ header {
     .pc { display: none; }
     .mobile { display: inherit; }
 
-    nav.mobile {}
-    nav.mobile ul {}
     nav.mobile ul li {
         height: 60px;
         line-height: 60px;

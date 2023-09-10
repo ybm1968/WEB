@@ -1,3 +1,4 @@
+
 * { margin: 0; padding: 0; box-sizing: border-box;}
 
 .container {
@@ -14,9 +15,11 @@ header {
     display: flex;
     justify-content: center;
 }
+
 header nav {
     height: 60px;
 }
+
 header nav .mainmenu {
     width: 100%;
     display: flex;
@@ -56,6 +59,8 @@ header nav .mainmenu > li:hover .submenu { display: block; }
 /* 서브메뉴 */
 header nav .submenu { display: none; }
 header nav .submenu li { background-color: #ddd; }
-header nav .submenu li a {}
+
 header nav .submenu li:hover { background-color: cornflowerblue; }
 header nav .submenu li:hover a { color: white; }
+
+
