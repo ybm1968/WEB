@@ -1,0 +1,21 @@
+.wrap {
+    position: relative;
+    margin: 20px auto;
+    width: 700px;
+    height: 400px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.slide-container {
+    position: absolute;
+    width: calc(700px * 5);
+    height: 400px;
+}
+
+
+.slide img{
+    float: left;
+    width: 700px;
+    height: 400px;
+}
