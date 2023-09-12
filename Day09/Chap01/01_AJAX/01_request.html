@@ -24,7 +24,8 @@
 
     <h3>게시글 쓰기</h3>
     <h4>FORM 전송(동기식) | AJAX 전송(비동기식)</h4>
-    <form action="//192.168.30.119:8080/api/board" method="post">
+    <!-- <form action="//192.168.30.119:8080/api/board" method="post"> -->
+    <form action="http://127.0.0.1:8080/api/board" method="post">
         <table>
             <tr>
                 <td><label for="title">제목</label></td>
@@ -51,7 +52,8 @@
 
     <h3>게시글 수정</h3>
     <h4>FORM 전송(동기식) | AJAX 전송(비동기식)</h4>
-    <form action="//192.168.30.119:8080/api/board/update" method="post">
+    <!-- <form action="//192.168.30.119:8080/api/board/update" method="post"> -->
+    <form action="http://127.0.0.1:8080/api/board/update" method="post">
         <table>
             <tr>
                 <td><label for="boradNo">게시글 번호</label></td>
@@ -82,7 +84,8 @@
 
     <h3>게시글 삭제</h3>
     <h4>FORM 전송(동기식) | AJAX 전송(비동기식)</h4>
-    <form action="//192.168.30.119:8080/api/board/delete" method="post">
+    <!-- <form action="//192.168.30.119:8080/api/board/delete" method="post"> -->
+    <form action="http://127.0.0.1:8080/api/board/delete" method="post">
         <table>
             <tr>
                 <td><label for="boradNo">게시글 번호</label></td>
@@ -164,7 +167,8 @@
             }
 
             let boardNo = document.getElementById('boardNo').value
-            let url = "http://192.168.30.119:8080/api/board?boardNo=" + boardNo
+            // let url = "http://192.168.30.119:8080/api/board?boardNo=" + boardNo
+            let url = "http://127.0.0.1:8080/api/board?boardNo=" + boardNo
     
             // 요청 설정
             // request.open("요청메소드", url, 비동기여부)
@@ -203,6 +207,9 @@
                 if( request.readyState == request.DONE && request.status == 200 ) {
                     let response = request.responseText
                     alert(response)
+
+                    location.href = './list.html'
+                    // location.assign('http://192.168.30.119:8080/board/list')
                 }
 
                 // 에러 발생
@@ -212,7 +219,8 @@
             }
 
             // 요청 설정
-            let url = 'http://192.168.30.119:8080/api/board'
+            // let url = 'http://192.168.30.119:8080/api/board'
+            let url = 'http://127.0.0.1:8080/api/board'
 
             request.open("POST", url, true)
             request.setRequestHeader("Content-Type", "application/json")
@@ -255,7 +263,8 @@
             }
 
             // 요청 설정
-            let url = 'http://192.168.30.119:8080/api/board'
+            // let url = 'http://192.168.30.119:8080/api/board'
+            let url = 'http://127.0.0.1:8080/api/board'
 
             request.open("POST", url, true)
             request.setRequestHeader("Content-Type", "application/xml")
@@ -297,7 +306,8 @@
             }
 
             // 요청 설정
-            let url = 'http://192.168.30.119:8080/api/board'
+            // let url = 'http://192.168.30.119:8080/api/board'
+            let url = 'http://127.0.0.1:8080/api/board'
 
             request.open("PUT", url, true)
             request.setRequestHeader("Content-Type", "application/json")
@@ -342,7 +352,8 @@
             }
 
             // 요청 설정
-            let url = 'http://192.168.30.119:8080/api/board'
+            // let url = 'http://192.168.30.119:8080/api/board'
+            let url = 'http://127.0.0.1:8080/api/board'
 
             request.open("PUT", url, true)
             request.setRequestHeader("Content-Type", "application/xml")
@@ -379,7 +390,8 @@
             }
 
             // 요청 설정
-            let url = 'http://192.168.30.119:8080/api/board'
+            // let url = 'http://192.168.30.119:8080/api/board'
+            let url = 'http://127.0.0.1:8080/api/board'
 
             request.open("DELETE", url, true)
             request.setRequestHeader("Content-Type", "application/json")
@@ -418,7 +430,8 @@
             }
 
             // 요청 설정
-            let url = 'http://192.168.30.119:8080/api/board'
+            // let url = 'http://192.168.30.119:8080/api/board'
+            let url = 'http://127.0.0.1:8080/api/board'
 
             request.open("DELETE", url, true)
             request.setRequestHeader("Content-Type", "application/xml")
@@ -450,7 +463,6 @@
                     }
                     // 데이터 있을 때
                     else {
-    
                         let $boardData = document.getElementById('board-data')
                         let $boardList = document.getElementById('board-list')
 
@@ -465,18 +477,19 @@
                                         <td>${board.updDate}</td>
                                     </tr>`
                             $boardList.innerHTML += tr
-                            
                         }
-    
+                        
                     }
                 }
-           }
+            }
 
-           let url = 'http://192.168.30.119:8080/api/board'
+            // let url = "http://192.168.30.119:8080/api/board"
+            let url = "http://127.0.0.1:8080/api/board"
 
-           request.open("GET", url, true)
-           request.setRequestHeader("Content-Typer", "application/json")
-           request.send()
+            request.open("GET", url, true)
+            request.setRequestHeader("Content-Type", "application/json")
+            request.send()
+
         }
 
         getList()
