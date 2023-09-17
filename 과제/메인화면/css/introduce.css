@@ -1,0 +1,68 @@
+/* 섹션 3번 */
+
+.text-box1 {
+    margin: 500px auto;
+    width: 700px;
+    height: 400px;
+}
+
+.section3 .text-box1 .img-box1 img {
+    float: left;
+    padding: 30px 20px;
+    width: 350px;
+    height: 400px;
+}
+
+.content-box1 {
+    float: right;
+    padding: 30px 20px;
+    width: 250px;
+    height: 400px;
+}
+
+.text-box1::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+/* 섹션 4번 */
+
+.text-box2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 500px auto;
+    width: 700px;
+    height: 400px;
+    background-color: lightblue;
+}
+
+.section4 .text-box2 .img-box2 img {
+    padding: 30px 20px;
+    width: 350px;
+    height: 400px;
+}
+
+.content-box2 {
+    padding: 30px 20px;
+    width: 250px;
+    height: 400px;
+}
+
+
+.button {
+    position: relative;
+    bottom: -200px;
+    right: -170px;
+    width: 100px;
+    height: 40px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    border: none;
+}
+
+#button1 { right: -150px;}
+
+.button:hover {
+    cursor:pointer
+}

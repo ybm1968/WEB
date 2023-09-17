@@ -1,22 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>slick</title>
+    <!-- 폰트 어썸 라이브러리 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <!-- cs -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/recently_img.css">
+    <link rel="stylesheet" href="css/introduce.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <!-- js -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </head>
+
 <body>
+    <!-- 헤더 영역 -->
+    <header>
+        <!-- util -->
+        <div class="util">
+            <ul class="util-menu">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="sign-up.html">회원가입</a></li>
+            </ul>
+        </div>
+
+        <!-- menu -->
+        <div class="menu">
+            <div class="left">
+                <a href="user.html"><i class="fa fa-user"></i></a>
+            </div>
+
+            <div class="center">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="board.html">Board</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <a href="side-bars.html"><i class="fa fa-bars"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 메인 영역 -->
+    <section id="section1">
         <div class="slide-container">
             <div class="slide"><img src="img/s01.jpg" alt="이미지01" title="이미지01"></div>
             <div class="slide"><img src="img/s02.jpg" alt="이미지02" title="이미지02"></div>
@@ -24,30 +66,130 @@
             <div class="slide"><img src="img/s04.jpg" alt="이미지04" title="이미지04"></div>
             <div class="slide"><img src="img/s05.jpg" alt="이미지05" title="이미지05"></div>
         </div>
-        
-        
-         <div class="text-box1">
-             <div class="img-box1">
-                 <img src="img/s05.jpg" alt="이미지">
-             </div>
-             <div class="content-box1">
-                 <h3>Title-Hello Text001</h3> <br>
-                 <p>emty content.emty content.emty content.emty content.emty content.</p>
-                 <button class="button" id="button1">Button 001</button>
-             </div>
-         </div>
+    </section>
 
-    
-         <div class="text-box2">
-             <div class="content-box2">
-                 <h3>Title-Hello Text002</h3> <br>
-                 <p>emty content.emty content.emty content.emty content.emty content.</p>
-                 <button class="button" id="button2">Button 002</button>
+    <!-- 최근 이미지 영역 -->
+    <section class="section2">
+        <div class="img-box">
+
+            <div class="img-box1">
+                <div class="img-section">
+                    <img src="img/s01.jpg" alt="최신 이미지01">
+                </div>
+
+                <div class="content-section">
+                    <h3>최신 이미지01</h3>
+                    <div class="content">
+                        최신 이미지01 입니다. <br>
+                        새로운 게시물을 감상해보세요.
+                    </div>
+                    <div class="bottom">
+                        2023-06-06
+                        <i class="fa fa-regular fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-box2">
+                <div class="img-section">
+                    <img src="img/s02.jpg" alt="최신 이미지02">
+                </div>
+
+                <div class="content-section">
+                    <h3>최신 이미지02</h3>
+                    <div class="content">
+                        최신 이미지02 입니다. <br>
+                        새로운 게시물을 감상해보세요.
+                    </div>
+                    <div class="bottom">
+                        2023-06-06
+                        <i class="fa fa-regular fa-heart"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="img-box3">
+                <div class="img-section">
+                    <img src="img/s03.jpg" alt="최신 이미지03">
+                </div>
+
+                <div class="content-section">
+                    <h3>최신 이미지03</h3>
+                    <div class="content">
+                        최신 이미지03 입니다. <br>
+                        새로운 게시물을 감상해보세요.
+                    </div>
+                    <div class="bottom">
+                        2023-06-06
+                        <i class="fa fa-regular fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 소개1 -->
+    <sectio class="section3">
+        <div class="text-box1">
+            <div class="img-box1">
+                <img src="img/s05.jpg" alt="이미지">
+            </div>
+            <div class="content-box1">
+                <h3>Title-Hello Text001</h3> <br>
+                <p>emty content.emty content.emty content.emty content.emty content.</p>
+                <button class="button" id="button1">Button 001</button>
+            </div>
+        </div>
+    </sectio>
+
+    <!-- 소개2 -->
+    <sectio class="section4">
+        <div class="text-box2">
+            <div class="content-box2">
+                <h3>Title-Hello Text002</h3> <br>
+                <p>emty content.emty content.emty content.emty content.emty content.</p>
+                <button class="button" id="button2">Button 002</button>
             </div>
             <div class="img-box2">
                 <img src="img/s04.jpg" alt="이미지">
             </div>
         </div>
-    
+    </sectio>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <table class="menu-table">
+                <tr>
+                    <td>Board</td>
+                    <td>Gallery</td>
+                    <td>About</td>
+                </tr>
+
+                <tr>
+                    <td>공지사항</td>
+                    <td>갤러리01</td>
+                    <td>사이트 소개</td>
+                </tr>
+
+                <tr>
+                    <td>자유게시판</td>
+                    <td>갤러리02</td>
+                </tr>
+            </table>
+          
+            <select name="" id="site" onchange="window.open(value,'_blank');">
+                <option value="http://www.naver.com">네이버</option>
+                <option value="http://www.kakao.com">카카오</option>
+                <option value="http://www.youtube.com">유튜브</option>
+            </select>
+          
+            <p>Copyright All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
+

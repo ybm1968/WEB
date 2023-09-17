@@ -1,0 +1,43 @@
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 400px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+}
+
+.container .menu-table {
+    float: left;
+}
+
+/* .container .menu-table::after {
+    display: block;
+    content: '';
+    clear: both;
+} */
+
+.container .menu-table td {
+    padding: 30px 60px;
+}
+
+#site {
+    position: relative;
+    top: 30px;
+    right: 100px;
+    float: right;
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.container p {
+    position: relative;
+    top: 350px;
+    right: 150px; 
+}

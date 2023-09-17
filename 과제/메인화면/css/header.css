@@ -1,7 +1,9 @@
 
-.container {height: 4000px;}
+/* .container {height: 5000px;} */
 
 header {
+    position: fixed;
+    margin-bottom: 100px;
     width: 100%;
     border: 2px solid black;
 }
