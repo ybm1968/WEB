@@ -125,10 +125,10 @@
             // 응답 확인
             request.onreadystatechange = function() {
                 // request.readyState : 클라이언트의 준비 상태 변수
-                // - UNSENT     : open() 호출 전
-                // - OPENED     : open() 호출된 상태
-                // - LOADING    : 응답 데이터를 가져오고 있는 상태
-                // - DONE       : 요청 완료
+                // - UNSENT(1)     : open() 호출 전
+                // - OPENED(2)     : open() 호출된 상태
+                // - LOADING(3)    : 응답 데이터를 가져오고 있는 상태
+                // - DONE(4)       : 요청 완료
     
                 // requeset.status      : 응답 상태 코드
                 // ex) 200, 404, 500
@@ -194,7 +194,7 @@
             let writer = document.getElementById('input-writer').value
             let content = document.getElementById('input-content').value
 
-            // JSON 
+            // JSON (객체)
             let data = {
                 'title' : title,
                 'writer' : writer,
@@ -226,6 +226,11 @@
             request.setRequestHeader("Content-Type", "application/json")
 
             // JSON.stringify() : JavaScript 의 객체를 JSON 문자열로 변환하는 메소드
+            // 서버와 클라이언트간에 데이터를 전송할 때는 JSON객체를 하나의 문자열 형태로 변환해서 전송을 해줘야함 그 떄 사용하는게 JSON.stringify() 메소드임
+            // 그렇게 하나의 문자열로 변환해서 전송한 데이터는 JavaScript가 인식할 수 없어서 JSON 객체 형태로 변형을 해줘야하는데 그 때 사용하는게 JSON.parse() 메소드임. 
+            // JSON.parse() 메소드를 통해서 JavaScript가 인식할 수 있는 JSON 객체 형태로 변환함 
+            // 즉 데이터를 보낼때는 JSON.stringify() 메소드를 사용하고 데이터를 받을때는 JSON.parse() 메소드를 사용함.
+            
             request.send( JSON.stringify(data) )
             
         }
